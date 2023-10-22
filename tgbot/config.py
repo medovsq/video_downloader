@@ -6,6 +6,7 @@ import pathlib
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent.parent
 YOUTUBE_PATH = BASE_DIR / 'YouTube_files'
+VK_PATH = BASE_DIR / 'VK_files'
 
 DOTENV_PATH = BASE_DIR / '.env'
 

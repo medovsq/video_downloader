@@ -2,7 +2,7 @@ from pytube import YouTube
 from config import YOUTUBE_PATH
 
 
-def download_video(url: str, filename: str, path=YOUTUBE_PATH):
+def YT_download_video(url: str, filename: str, path=YOUTUBE_PATH):
     try:
         stream = YouTube(url).streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first()
     except:
